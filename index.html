@@ -17,7 +17,9 @@
     <nav>
       <div class="app-logo">Drum App</div>
       <div class="menu">
-        <button>Start Game</button>
+        <button id="start_button_id" onclick="prepare_game()">
+          Start Game
+        </button>
         <button>Free Play</button>
       </div>
     </nav>
@@ -29,14 +31,16 @@
         </div>
         <div id="timer">0:00</div>
       </div>
-      <div class="target-box">
-        <div class="target-card">A</div>
-        <div class="target-card">G</div>
-        <div class="target-card">A</div>
-        <div class="target-card active">G</div>
-        <div class="target-card"></div>
-        <div class="target-card"></div>
-        <div class="target-card"></div>
+      <div class="target-section">
+        <div class="target-box">
+          <div id="key-upcoming-1" class="target-card"></div>
+          <div id="key-upcoming-2" class="target-card"></div>
+          <div id="key-upcoming-3" class="target-card"></div>
+          <div id="key-upcoming-4" class="target-card active"></div>
+          <div id="key-result-1" class="target-card"></div>
+          <div id="key-result-2" class="target-card"></div>
+          <div id="key-result-3" class="target-card"></div>
+        </div>
       </div>
       <div class="key-box">
         <div id="clap" class="key-card">
@@ -77,5 +81,7 @@
         </div>
       </div>
     </div>
+
+    <script src="drumapp_script.js"></script>
   </body>
 </html>
